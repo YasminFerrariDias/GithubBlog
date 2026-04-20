@@ -1,7 +1,15 @@
+import { ReactNode } from "react";
 import { CardContainer } from "./styles";
 
-export function Card() {
+interface CardProps {
+  variant: 'profile' | 'post'
+  children: ReactNode
+}
+
+export function Card({ variant, children }: CardProps) {
   return (
-    <CardContainer>teest</CardContainer>
+    <CardContainer $variant={variant}>
+      {children}
+    </CardContainer>
   )
 }
