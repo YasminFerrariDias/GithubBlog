@@ -5,7 +5,6 @@ interface TextContainerProps {
   $variantWeight: 'regular' | 'bold'
   $variantSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'
   $variantColor?: keyof typeof theme.colors
-  $text: string
 }
 
 export const TextContainer = styled.p<TextContainerProps>`

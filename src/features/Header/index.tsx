@@ -7,9 +7,7 @@ export function Header() {
     <HeaderContainer>
       <Container>
         <img src={LogoHeader} alt="" />
-        <Text variantSize="2xl" variantWeight="regular" variantColor={"blue"} >
-          GITHUB BLOG
-        </Text>
+        <Text variantSize="2xl" variantWeight="regular" variantColor={"blue"} text="GITHUB BLOG" />
       </Container>
     </HeaderContainer>
   )

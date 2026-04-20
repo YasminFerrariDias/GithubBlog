@@ -10,6 +10,8 @@ interface TextProps {
 
 export function Text({ variantWeight, variantSize, variantColor, text }: TextProps ) {
   return (
-    <TextContainer $variantWeight={variantWeight} $variantSize={variantSize} $variantColor={variantColor} $text={text} />
+    <TextContainer $variantWeight={variantWeight} $variantSize={variantSize} $variantColor={variantColor}>
+      {text}
+    </TextContainer>
   )
 }

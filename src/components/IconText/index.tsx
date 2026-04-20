@@ -7,7 +7,6 @@ type TextProps = ComponentProps<typeof Text>
 
 interface IconTextProps extends TextProps {
   icon: IconType
-  text: string
 }
 
 export function IconText({ icon, text, variantSize, variantWeight, variantColor }: IconTextProps) {
@@ -16,9 +15,7 @@ export function IconText({ icon, text, variantSize, variantWeight, variantColor 
     <IconTextContainer $icon={icon} > 
     
     <Icon />
-      <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor}>
-        {text}
-      </Text>
+      <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
     </IconTextContainer>
   )
 }
