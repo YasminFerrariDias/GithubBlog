@@ -17,9 +17,9 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    },
+    //  "paths": {
+    //    "@/*": ["./src/*"]
+    //  },
     // "baseUrl": ".",
     "target": "es2015",
     "typeRoots": ["./node_modules/@types", "./src/types"]

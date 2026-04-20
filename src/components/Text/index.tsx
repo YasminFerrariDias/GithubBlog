@@ -1,5 +1,5 @@
 import { TextContainer } from "./styles";
-import { theme } from "@/styles/themes/defaultTheme";
+import { theme } from "../../styles/themes/defaultTheme";
 
 interface TextProps {
   variantWeight: 'regular' | 'bold'
