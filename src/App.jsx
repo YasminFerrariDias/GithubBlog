@@ -1,9 +1,9 @@
-import { Header } from "./features/Header";
+import { Card } from "./components/Card";
 
 export function App() {
   return (
     <>
-      <Header />
+      <Card />
     </>
-  )
+  );
 }
