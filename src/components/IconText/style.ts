@@ -6,7 +6,6 @@ interface IconTextContainerProps {
 }
 
 export const IconTextContainer = styled.div<IconTextContainerProps>`
-  background-color: red;
   display: flex;
   align-items: center;
   gap: 0.3rem;
