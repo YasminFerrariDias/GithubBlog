@@ -1,12 +1,9 @@
-import { Card } from "./components/Card";
+import { CardProfile } from "./features/CardProfile";
 
 export function App() {
   return (
     <>
-      <Card variant="profile">
-        teste
-      </Card>
-      <Card variant="post" />
+      <CardProfile />
     </>
   );
 }
