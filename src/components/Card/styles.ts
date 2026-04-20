@@ -26,6 +26,4 @@ const variantStyles = {
 
 export const CardContainer = styled.div<CardContainerProps>`
   ${({ $variant }) => variantStyles[$variant]}
-  
-
 `;
