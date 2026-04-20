@@ -21,3 +21,9 @@ export const Container = styled.div`
   padding-left: 2rem;
   gap: 0.5rem;
 `;
+
+export const Icon = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-top: auto;
+`;
