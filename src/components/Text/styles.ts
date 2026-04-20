@@ -1,10 +1,11 @@
-import { theme } from "@/styles/themes/defaultTheme";
+import { theme } from "../../styles/themes/defaultTheme";
 import styled from "styled-components";
 
 interface TextContainerProps {
   $variantWeight: 'regular' | 'bold'
   $variantSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'
   $variantColor?: keyof typeof theme.colors
+  $text: string
 }
 
 export const TextContainer = styled.p<TextContainerProps>`

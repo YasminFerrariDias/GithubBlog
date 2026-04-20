@@ -16,7 +16,7 @@ export function CardProfile() {
           <Link><Text variantSize="xs" variantWeight="regular">GITHUB</Text></Link>
         </Header>
         <Text variantSize="md" variantWeight="regular">Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass.</Text>
-        <IconText icon={FaGithub} variantSize="md" variantWeight="regular" text="oiiii" children="oi"/>
+        <IconText icon={FaGithub} variantSize="md" variantWeight="regular" text="oiiii" />
         </Container>
       </CardProfileContainer>
     </Card>
