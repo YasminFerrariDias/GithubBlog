@@ -3,8 +3,6 @@ import { colors } from './colors'
 import { fonts } from './fonts'
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-  
   * {
     margin: 0;
     padding: 0;
@@ -14,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background: ${colors.base.background};
-    color: ${colors.base.text};
+    background: ${colors.background};
+    color: ${colors.text};
   }
 `
