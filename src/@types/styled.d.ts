@@ -1,15 +1,11 @@
 import 'styled-components'
 import { colors } from '../styles/colors'
 import { fonts } from '../styles/fonts'
+import { Theme } from '../styles/themes/defaultTheme'
 
 type ColorsType = typeof colors
 type FontsType = typeof fonts
 
-export interface ThemeType {
-  colors: ColorsType
-  fonts: FontsType
-}
-
 declare module 'styled-components' {
-  export interface DefaultTheme extends ThemeType {}
+  export interface DefaultTheme extends Theme {}
 }
