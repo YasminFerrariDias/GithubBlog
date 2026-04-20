@@ -17,7 +17,7 @@ const variantStyles = {
 
   post: `
     width: 26rem;
-    height: 13.25rem;
+    height: 16.25rem;
     padding: 2rem;
     background-color: ${theme.colors.post};
     border-radius: 0.625rem;
