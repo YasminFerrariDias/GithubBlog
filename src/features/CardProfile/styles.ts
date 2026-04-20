@@ -1,3 +1,23 @@
 import styled from "styled-components";
 
-export const CardProfileContainer = styled.div``;
+export const CardProfileContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const Link = styled.div`
+  margin-top: 0.75rem;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  gap: 0.5rem;
+`;
