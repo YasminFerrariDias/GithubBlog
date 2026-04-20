@@ -1,13 +1,9 @@
-import { CardProfile } from "./features/CardProfile";
-import { CardPost } from "./features/CardPost";
-import { InputText } from "./components/InputText";
+import { Home } from "./pages/Home"
 
 export function App() {
   return (
     <>
-      <CardProfile />
-      <CardPost />
-      <InputText placeholder="Texto" />
+      <Home />
     </>
   );
 }
