@@ -26,7 +26,7 @@ export function IconText({ icon, text, variantSize, variantWeight, variantColor,
     return (
       <IconTextContainer $icon={icon} $colorIcon={colorIcon} >
         <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
-        <Icon />
+        <Icon size={12}/>
       </IconTextContainer>
     )
   }
