@@ -31,7 +31,14 @@ export function CardProfile() {
             {profile.bio || "Este usuário não possui uma biografia cadastrada."}
           </Text>
           <Icon>
-            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" DirectionIcon="left" children={profile.name} colorIcon="label" />
+            <IconText
+              icon={FaGithub}
+              variantSize="md"
+              variantWeight="regular"
+              DirectionIcon="left"
+              colorIcon="label"
+              children={profile.login}
+            />
 
             <IconText
               icon={FaBuilding}
@@ -39,7 +46,7 @@ export function CardProfile() {
               DirectionIcon="left"
               variantWeight="regular"
               colorIcon="label"
-              children={!profile.company 
+              children={!profile.company
                 ? `Informação não disponível`
                 : `${profile.company} seguidores`}
             />
