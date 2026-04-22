@@ -1,5 +1,5 @@
 import { Card } from "../../components/Card";
-import { CardProfileContainer, Container, Header, Link, Icon } from "./styles";
+import { CardProfileContainer, Container, Header, Link, Icon, Img } from "./styles";
 import { Text } from "../../components/Text";
 import Avatar from "../../assets/avatar.png"
 import { IconText } from "../../components/IconText";
@@ -21,7 +21,7 @@ export function CardProfile() {
   return (
     <Card variant="profile">
       <CardProfileContainer>
-        <img src={Avatar} />
+        <Img src={profile.avatar_url} />
         <Container>
           <Header>
             <Text variantSize="2xl" variantWeight="regular" variantColor="title" children={profile.name} />

@@ -5,6 +5,12 @@ export const CardProfileContainer = styled.div`
   flex-direction: row;
 `;
 
+export const Img = styled.img`
+  width: 9.25rem;
+  height: 9.25rem;
+  border-radius: 0.5rem;
+`;
+
 export const Header = styled.div`
   display: flex;
   flex-direction: row;
