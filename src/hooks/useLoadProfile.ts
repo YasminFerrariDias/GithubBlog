@@ -1,0 +1,62 @@
+import { useEffect, useState } from "react";
+import { searchProfile } from "../services/api-core/searchProfile"
+
+export interface Profile {
+  login: string;
+  id: number;
+  node_id: string;
+  avatar_url: string;
+  gravatar_id: string;
+  url: string;
+  html_url: string;
+  followers_url: string;
+  following_url: string;
+  gists_url: string;
+  starred_url: string;
+  subscriptions_url: string;
+  organizations_url: string;
+  repos_url: string;
+  events_url: string;
+  received_events_url: string;
+  type: string;
+  user_view_type: string;
+  site_admin: boolean;
+  name: string;
+  company?: null;
+  blog: string;
+  locationw: null;
+  email?: null;
+  hireable?: null;
+  bio?: null;
+  twitter_username?: null;
+  public_repos: number;
+  public_gists: number;
+  followers: number;
+  following: number;
+  created_at: Date;
+  updated_at: Date;
+}
+
+
+export function useLoadProfile() {
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function LoadProfile() {
+      try {
+        const data = await searchProfile('yasminferraridias');
+        setProfile(data)
+      } catch (error) {
+        console.error('Erro ao buscar perfil:', error)
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    LoadProfile()
+  }, []);
+
+  return { profile, loading };
+}
+

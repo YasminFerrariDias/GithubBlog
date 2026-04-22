@@ -5,15 +5,26 @@ import Avatar from "../../assets/avatar.png"
 import { IconText } from "../../components/IconText";
 import { FaBuilding, FaGithub } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
+import { useLoadProfile } from "../../hooks/useLoadProfile";
 
 export function CardProfile() {
+  const { profile, loading } = useLoadProfile();
+
+  if (loading) {
+    return <p>Carregando perfil...</p>
+  }
+
+  if (!profile) {
+    return <p>Perfil não encontrado</p>
+  }
+
   return (
     <Card variant="profile">
       <CardProfileContainer>
         <img src={Avatar} />
         <Container>
           <Header>
-            <Text variantSize="2xl" variantWeight="regular" variantColor="title" children="Cameron Williamson" />
+            <Text variantSize="2xl" variantWeight="regular" variantColor="title" children={profile.name} />
             <Link><Text variantSize="xs" variantWeight="regular" children="GITHUB"></Text></Link>
           </Header>
           <Text variantSize="md" variantWeight="regular" children="Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass." />
