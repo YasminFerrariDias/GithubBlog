@@ -10,16 +10,16 @@ export function CardDescriptionPost() {
     <Card variant="DescriptionPost">
       <CardDescriptionPostContainer>
         <Header>
-          <IconText icon={IoIosArrowBack} text="VOLTAR" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue"  />
-          <IconText icon={FaExternalLinkAlt} text="VER NO GITHUB" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" />
+          <IconText icon={IoIosArrowBack} text="VOLTAR" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" DirectionIcon="left" />
+          <IconText icon={FaExternalLinkAlt} text="VER NO GITHUB" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" DirectionIcon="right" />
         </Header>
 
         <Text text="JavaScript data types and data structures" variantSize="2xl" variantWeight="bold" variantColor="title" />
 
         <Footer>
-          <IconText icon={FaGithub} text="cameronwill" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" />
-          <IconText icon={FaCalendarDay} text="Há 1 dia" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" />
-          <IconText icon={FaComment} text="5 comentários" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" />
+          <IconText icon={FaGithub} text="cameronwill" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" DirectionIcon="left" />
+          <IconText icon={FaCalendarDay} text="Há 1 dia" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" DirectionIcon="left" />
+          <IconText icon={FaComment} text="5 comentários" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" DirectionIcon="left" />
         </Footer>
       </CardDescriptionPostContainer>
     </Card>

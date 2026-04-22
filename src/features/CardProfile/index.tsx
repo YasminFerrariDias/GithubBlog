@@ -18,9 +18,9 @@ export function CardProfile() {
           </Header>
           <Text variantSize="md" variantWeight="regular" text="Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass." />
           <Icon>
-            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" text="cameronwll" colorIcon="label" />
-            <IconText icon={FaBuilding} variantSize="md" variantWeight="regular" text="Rocketseat" colorIcon="label" />
-            <IconText icon={FaUserGroup} variantSize="md" variantWeight="regular" text="32 seguidores" colorIcon="label" />
+            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" text="cameronwll" colorIcon="label" DirectionIcon="left" />
+            <IconText icon={FaBuilding} variantSize="md" variantWeight="regular" text="Rocketseat" colorIcon="label" DirectionIcon="left" />
+            <IconText icon={FaUserGroup} variantSize="md" variantWeight="regular" text="32 seguidores" colorIcon="label" DirectionIcon="left" />
           </Icon>
         </Container>
       </CardProfileContainer>
