@@ -1,55 +1,52 @@
 import { Text } from "../../components/Text";
-import { DescriptionPostContainer, Description, Code, DescriptionFirst } from "./styles";
+import { DescriptionPostContainer, Description, Code, DescriptionFirst, Row, Comment } from "./styles";
 
 export function DescriptionPost() {
   return (
     <DescriptionPostContainer>
       <Description>
         <DescriptionFirst>
-          <Text variantSize="md" variantWeight="regular" variantColor="text"><strong>Programming languages all have built-in data structures, but these often differ from one language to another.
-          </strong>This article attempts to list the built-in data structures available in JavaScript and what properties they have. These can be used to build other data structures. Wherever possible, comparisons with other languages are drawn."
+          <Text variantSize="md" variantWeight="regular" variantColor="text"><strong>Programming languages all have built-in data structures, but these often differ from one language to another. 
+          </strong> This article attempts to list the built-in data structures available in JavaScript and what properties they have. These can be used to build other data structures. Wherever possible, comparisons with other languages are drawn."
           </Text>
         </DescriptionFirst>
 
-        <Text variantSize="md" variantWeight="regular" variantColor="blue">
-          "Dynamic Typing" 
-        </Text>
+        <Text variantSize="md" variantWeight="regular" variantColor="blue" children="Dynamic Typing" />
         <div>
-          <Text variantSize="md" variantWeight="regular" variantColor="text">"JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:"</Text>
+          <Text variantSize="md" variantWeight="regular" variantColor="text" children="JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:" />
         </div>
       </Description>
 
       <Code>
         <div>
-          <div>
-            <Text variantSize="md" variantWeight="regular" variantColor="span" text="let" />
-            <Text variantSize="md" variantWeight="regular" variantColor="text" text="foo =" />
-            <Text variantSize="md" variantWeight="regular" variantColor="blue" text="42" />
-          </div>
+          <Row>
+            <Text variantSize="md" variantWeight="regular" variantColor="span" children="let" />
+            <Text variantSize="md" variantWeight="regular" variantColor="text" children="foo =" />
+            <Text variantSize="md" variantWeight="regular" variantColor="blue" children="42" />
+          </Row>
 
-          <div>
-            <Text variantSize="md" variantWeight="regular" variantColor="text" text="foo =" />
-            <Text variantSize="md" variantWeight="regular" variantColor="blue" text="'bar'" />
-          </div>
+          <Row>
+            <Text variantSize="md" variantWeight="regular" variantColor="text" children="foo =" />
+            <Text variantSize="md" variantWeight="regular" variantColor="blue" children="'bar'" />
+          </Row>
 
-          <div>
-            <Text variantSize="md" variantWeight="regular" variantColor="text" text="foo =" />
-            <Text variantSize="md" variantWeight="regular" variantColor="blue" text="true" />
-          </div>
+          <Row>
+            <Text variantSize="md" variantWeight="regular" variantColor="text" children="foo =" />
+            <Text variantSize="md" variantWeight="regular" variantColor="blue" children="true" />
+          </Row>
         </div>
         <div>
-          <div>
-            <Text variantSize="md" variantWeight="regular" variantColor="subtitle" text="// foo is now a number" />
-          </div>
+          <Comment>
+            <Text variantSize="md" variantWeight="regular" variantColor="subtitle" children="// foo is now a number" />
+          </Comment>
 
-          <div>
-            <Text variantSize="md" variantWeight="regular" variantColor="subtitle" text="// foo is now a string" />
-          </div>
+          <Comment>
+            <Text variantSize="md" variantWeight="regular" variantColor="subtitle" children="// foo is now a string" />
+          </Comment>
 
-          <div>
-            <Text variantSize="md" variantWeight="regular" variantColor="subtitle" text="// foo is now a boolean" />
-
-          </div>
+          <Comment>
+            <Text variantSize="md" variantWeight="regular" variantColor="subtitle" children="// foo is now a boolean" />
+          </Comment>
         </div>
       </Code>
     </DescriptionPostContainer>
