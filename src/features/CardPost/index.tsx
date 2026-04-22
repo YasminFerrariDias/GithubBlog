@@ -8,11 +8,11 @@ export function CardPost() {
   const { issues, loading } = useLoadIssues();
 
   if (loading) {
-    return <p>Carregando os repositórios...</p>
+    return <p>Carregando os issues...</p>
   }
 
   if (!issues) {
-    return <p>Repositórios não encontrado</p>
+    return <p>Issues não encontrado</p>
   }
   console.log(issues)
 
