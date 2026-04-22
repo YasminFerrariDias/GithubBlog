@@ -22,12 +22,6 @@ export function Home() {
 
       <Catalog>
         <CardPost />
-        <CardPost />
-        <CardPost />
-        <CardPost />
-        <CardPost />
-        <CardPost />
-        <CardPost />
       </Catalog>
     </HomeContainer>
   )
