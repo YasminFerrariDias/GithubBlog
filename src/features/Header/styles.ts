@@ -8,10 +8,10 @@ export const HeaderContainer = styled.div`
   background-repeat: no-repeat;
   height: 18.5rem;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: -1000;
 `;
 
 export const Container = styled.div`
