@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { searchRepository } from "../services/api-core/searchIssues";
+import { listIssues } from "../services/api-core/listIssues";
 
 export interface Issues {
   url: string;
@@ -38,7 +38,7 @@ export function useLoadIssues() {
   useEffect(() => {
     async function LoadRepository() {
       try {
-        const data = await searchRepository('xizhibei', 'blog');
+        const data = await listIssues('xizhibei', 'blog');
         setIssues(data)
       } catch (error) {
         console.error('Erro ao buscar repositórios:', error)

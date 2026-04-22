@@ -1,6 +1,6 @@
 import { api } from "./api";
 
-export async function searchRepository(username: string, repos: string) {
+export async function listIssues(username: string, repos: string) {
   try {
     const response = await api.get(`/repos/${username}/${repos}/issues`);
     return response.data
