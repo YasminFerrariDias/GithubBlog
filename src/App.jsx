@@ -1,9 +1,11 @@
-import { Home } from "./pages/Home"
+// import { Home } from "./pages/Home"
+import { Card } from "./components/Card"
 
 export function App() {
   return (
     <>
-      <Home />
+      {/*<Home />*/}
+      <Card variant="DescriptionPost" />
     </>
   );
 }

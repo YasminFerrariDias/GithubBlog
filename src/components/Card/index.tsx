@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { CardContainer } from "./styles";
 
 interface CardProps {
-  variant: 'profile' | 'post'
+  variant: 'profile' | 'post' | 'DescriptionPost'
   children: ReactNode
 }
 

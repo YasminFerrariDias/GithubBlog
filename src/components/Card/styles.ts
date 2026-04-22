@@ -2,7 +2,7 @@ import { theme } from "../../styles/themes/defaultTheme";
 import styled from "styled-components";
 
 interface CardContainerProps {
-  $variant: 'profile' | 'post'
+  $variant: 'profile' | 'post' | 'DescriptionPost'
 }
 
 const variantStyles = {
@@ -20,6 +20,14 @@ const variantStyles = {
     height: 16.25rem;
     padding: 2rem;
     background-color: ${theme.colors.post};
+    border-radius: 0.625rem;
+  `,
+
+  DescriptionPost: `
+    width: 54rem;
+    height: 10.5rem;
+    padding: 2rem;
+    background-color: ${theme.colors.profile};
     border-radius: 0.625rem;
   `
 };
