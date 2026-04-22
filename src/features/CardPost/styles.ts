@@ -7,7 +7,8 @@ export const Header = styled.div`
   flex-direction: row;
   gap: 1rem;
   justify-content: space-between;
-  margin-bottom: 1.5rem;;
+  margin-bottom: 1.5rem;
+  height: 3rem;
 `;
 
 export const Time = styled.div`
