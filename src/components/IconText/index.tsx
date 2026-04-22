@@ -12,21 +12,25 @@ interface IconTextProps extends TextProps {
   DirectionIcon: 'left' | 'right'
 }
 
-export function IconText({ icon, text, variantSize, variantWeight, variantColor, colorIcon, DirectionIcon }: IconTextProps) {
+export function IconText({ icon, children, variantSize, variantWeight, variantColor, colorIcon, DirectionIcon }: IconTextProps) {
   const Icon = icon;
 
   if (DirectionIcon === 'left') {
     return (
       <IconTextContainer $icon={icon} $colorIcon={colorIcon} >
         <Icon />
-        <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
+        <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor}>
+          {children}
+        </Text>
       </IconTextContainer>
     )
   } else {
     return (
       <IconTextContainer $icon={icon} $colorIcon={colorIcon} >
-        <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
-        <Icon size={12}/>
+        <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor}>
+          {children}
+        </Text>
+        <Icon size={12} />
       </IconTextContainer>
     )
   }

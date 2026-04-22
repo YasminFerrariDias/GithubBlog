@@ -7,12 +7,12 @@ export function CardPost() {
     <Card variant="post">
       <CardPostContainer>
         <Header>
-          <Text variantSize="xl" variantWeight="bold" text="JavaScript data types and data structures" variantColor="title" />
+          <Text variantSize="xl" variantWeight="bold" variantColor="title" children="JavaScript data types and data structures" />
           <Time>
-            <Text variantSize="sm" variantWeight="regular" text="Há 1 dia" variantColor="span" />
+            <Text variantSize="sm" variantWeight="regular" variantColor="span" children="Há 1 dia" />
           </Time>
         </Header>
-        <Text variantSize="md" variantWeight="regular" text="Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in..." variantColor="text" />
+        <Text variantSize="md" variantWeight="regular" variantColor="text" children="Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in..." />
       </CardPostContainer>
     </Card>
   )

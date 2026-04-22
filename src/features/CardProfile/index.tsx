@@ -13,14 +13,14 @@ export function CardProfile() {
         <img src={Avatar} />
         <Container>
           <Header>
-            <Text variantSize="2xl" variantWeight="regular" variantColor="title" text="Cameron Williamson" />
-            <Link><Text variantSize="xs" variantWeight="regular" text="GITHUB" /></Link>
+            <Text variantSize="2xl" variantWeight="regular" variantColor="title" children="Cameron Williamson" />
+            <Link><Text variantSize="xs" variantWeight="regular" children="GITHUB"></Text></Link>
           </Header>
-          <Text variantSize="md" variantWeight="regular" text="Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass." />
+          <Text variantSize="md" variantWeight="regular" children="Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass." />
           <Icon>
-            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" text="cameronwll" colorIcon="label" DirectionIcon="left" />
-            <IconText icon={FaBuilding} variantSize="md" variantWeight="regular" text="Rocketseat" colorIcon="label" DirectionIcon="left" />
-            <IconText icon={FaUserGroup} variantSize="md" variantWeight="regular" text="32 seguidores" colorIcon="label" DirectionIcon="left" />
+            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" DirectionIcon="left" children="cameronwll" colorIcon="label" />
+            <IconText icon={FaBuilding} variantSize="md" DirectionIcon="left" variantWeight="regular" children="Rocketseat" colorIcon="label" />
+            <IconText icon={FaUserGroup} variantSize="md" DirectionIcon="left" variantWeight="regular" children="32 seguidores" colorIcon="label" />
           </Icon>
         </Container>
       </CardProfileContainer>
