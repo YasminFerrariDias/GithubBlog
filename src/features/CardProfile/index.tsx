@@ -27,7 +27,9 @@ export function CardProfile() {
             <Text variantSize="2xl" variantWeight="regular" variantColor="title" children={profile.name} />
             <Link><Text variantSize="xs" variantWeight="regular" children="GITHUB"></Text></Link>
           </Header>
-          <Text variantSize="md" variantWeight="regular" children="Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu viverra massa quam dignissim aenean malesuada suscipit. Nunc, volutpat pulvinar vel mass." />
+          <Text variantSize="md" variantWeight="regular"> 
+            {profile.bio || "Este usuário não possui uma biografia cadastrada."}  
+          </Text>
           <Icon>
             <IconText icon={FaGithub} variantSize="md" variantWeight="regular" DirectionIcon="left" children="cameronwll" colorIcon="label" />
             <IconText icon={FaBuilding} variantSize="md" DirectionIcon="left" variantWeight="regular" children="Rocketseat" colorIcon="label" />

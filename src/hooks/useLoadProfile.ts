@@ -27,7 +27,7 @@ export interface Profile {
   locationw: null;
   email?: null;
   hireable?: null;
-  bio?: null;
+  bio: null;
   twitter_username?: null;
   public_repos: number;
   public_gists: number;
@@ -36,7 +36,6 @@ export interface Profile {
   created_at: Date;
   updated_at: Date;
 }
-
 
 export function useLoadProfile() {
   const [profile, setProfile] = useState<Profile | null>(null);
