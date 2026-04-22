@@ -31,9 +31,9 @@ export function CardProfile() {
             {profile.bio || "Este usuário não possui uma biografia cadastrada."}  
           </Text>
           <Icon>
-            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" DirectionIcon="left" children="cameronwll" colorIcon="label" />
-            <IconText icon={FaBuilding} variantSize="md" DirectionIcon="left" variantWeight="regular" children="Rocketseat" colorIcon="label" />
-            <IconText icon={FaUserGroup} variantSize="md" DirectionIcon="left" variantWeight="regular" children="32 seguidores" colorIcon="label" />
+            <IconText icon={FaGithub} variantSize="md" variantWeight="regular" DirectionIcon="left" children={profile.name} colorIcon="label" />
+            <IconText icon={FaBuilding} variantSize="md" DirectionIcon="left" variantWeight="regular" children={profile.name} colorIcon="label" />
+            <IconText icon={FaUserGroup} variantSize="md" DirectionIcon="left" variantWeight="regular" colorIcon="label" children={profile.followers === 1 ? `${profile.followers} seguidor` : `${profile.followers} seguidores`} />
           </Icon>
         </Container>
       </CardProfileContainer>
