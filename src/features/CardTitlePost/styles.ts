@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardDescriptionPostContainer = styled.div`
+export const CardTitlePostContainer = styled.div`
 
 `;
 

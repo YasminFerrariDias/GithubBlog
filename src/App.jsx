@@ -1,11 +1,11 @@
 // import { Home } from "./pages/Home"
-import { DescriptionPost } from "./features/DescriptionPost"
+import { Description } from "./pages/Description"
 
 export function App() {
   return (
     <>
       {/*<Home />*/}
-      <DescriptionPost />
+      <Description />
     </>
   );
 }

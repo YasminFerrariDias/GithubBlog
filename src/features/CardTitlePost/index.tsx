@@ -3,12 +3,12 @@ import { Card } from "../../components/Card";
 import { IconText } from "../../components/IconText";
 import { Text } from "../../components/Text";
 import { FaCalendarDay, FaComment, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { CardDescriptionPostContainer, Footer, Header } from "./styles";
+import { CardTitlePostContainer, Footer, Header } from "./styles";
 
-export function CardDescriptionPost() {
+export function CardTitlePost() {
   return (
     <Card variant="DescriptionPost">
-      <CardDescriptionPostContainer>
+      <CardTitlePostContainer>
         <Header>
           <IconText icon={IoIosArrowBack} children="VOLTAR" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" DirectionIcon="left" />
           <IconText icon={FaExternalLinkAlt} children="VER NO GITHUB" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" DirectionIcon="right" />
@@ -21,7 +21,7 @@ export function CardDescriptionPost() {
           <IconText icon={FaCalendarDay} children="Há 1 dia" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" DirectionIcon="left" />
           <IconText icon={FaComment} children="5 comentários" variantSize="md" variantWeight="regular" colorIcon="span" variantColor="span" DirectionIcon="left" />
         </Footer>
-      </CardDescriptionPostContainer>
+      </CardTitlePostContainer>
     </Card>
   )
 }

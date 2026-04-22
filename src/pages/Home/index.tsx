@@ -12,8 +12,8 @@ export function Home() {
       <CardProfile />
 
       <Info>
-        <Text variantSize="lg" variantWeight="regular" text="Publicações" variantColor="subtitle" />
-        <Text variantSize="sm" variantWeight="regular" text="6 publicações" variantColor="span" />
+        <Text variantSize="lg" variantWeight="regular" children="Publicações" variantColor="subtitle" />
+        <Text variantSize="sm" variantWeight="regular" children="6 publicações" variantColor="span" />
       </Info>
 
       <Input>
