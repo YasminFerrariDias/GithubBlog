@@ -30,7 +30,7 @@ export function CardPost() {
               </Text>
             </Time>
           </Header>
-          <Text variantSize="md" variantWeight="regular" variantColor="text" children="Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in..." />
+          <Text variantSize="md" variantWeight="regular" variantColor="text" children={issue.body.length <= 100 ? `${issue.body}` : `${issue.body.slice(0, 100)}...`} />
         </CardPostContainer>
       </Card>
     ))
