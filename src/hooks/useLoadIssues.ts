@@ -36,7 +36,7 @@ export function useLoadIssues() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function LoadRepository() {
+    async function LoadIssues() {
       try {
         const data = await listIssues('xizhibei', 'blog');
         setIssues(data)
@@ -47,7 +47,7 @@ export function useLoadIssues() {
       }
     }
 
-    LoadRepository();
+    LoadIssues();
   }, []);
 
   return { issues, loading }

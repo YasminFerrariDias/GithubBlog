@@ -18,10 +18,6 @@ export const Info = styled.div`
   width: 54rem;
 `;
 
-export const Input = styled.div`
-  padding-bottom: 2rem;
-`;
-
 export const Catalog = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;

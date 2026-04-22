@@ -1,11 +1,13 @@
-import { InputText } from "../../components/InputText";
 import { Text } from "../../components/Text";
 import { CardPost } from "../../features/CardPost";
 import { CardProfile } from "../../features/CardProfile";
 import { Header } from "../../features/Header";
-import { HomeContainer, Info, Catalog, Input } from "./styles";
+import { SearchText } from "../../features/SeachText";
+import { HomeContainer, Info, Catalog } from "./styles";
 
 export function Home() {
+
+
   return (
     <HomeContainer>
       <Header />
@@ -16,9 +18,7 @@ export function Home() {
         <Text variantSize="sm" variantWeight="regular" children="6 publicações" variantColor="span" />
       </Info>
 
-      <Input>
-        <InputText placeholder="Buscar Conteúdo" />
-      </Input>
+      <SearchText />
 
       <Catalog>
         <CardPost />
