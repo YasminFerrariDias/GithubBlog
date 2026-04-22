@@ -9,6 +9,7 @@ export const Header = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 38.5rem;
 `;
 
 export const Link = styled.div`
