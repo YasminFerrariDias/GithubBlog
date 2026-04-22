@@ -9,14 +9,25 @@ type TextProps = ComponentProps<typeof Text>
 interface IconTextProps extends TextProps {
   icon: IconType
   colorIcon?: keyof typeof colors
+  DirectionIcon: 'left' | 'right'
 }
 
-export function IconText({ icon, text, variantSize, variantWeight, variantColor, colorIcon }: IconTextProps) {
+export function IconText({ icon, text, variantSize, variantWeight, variantColor, colorIcon, DirectionIcon }: IconTextProps) {
   const Icon = icon;
-  return (
-    <IconTextContainer $icon={icon} $colorIcon={colorIcon} > 
-    <Icon />
-      <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
-    </IconTextContainer>
-  )
+
+  if (DirectionIcon === 'left') {
+    return (
+      <IconTextContainer $icon={icon} $colorIcon={colorIcon} >
+        <Icon />
+        <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
+      </IconTextContainer>
+    )
+  } else {
+    return (
+      <IconTextContainer $icon={icon} $colorIcon={colorIcon} >
+        <Text variantSize={variantSize} variantWeight={variantWeight} variantColor={variantColor} text={text} />
+        <Icon />
+      </IconTextContainer>
+    )
+  }
 }

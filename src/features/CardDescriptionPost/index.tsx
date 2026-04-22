@@ -10,7 +10,7 @@ export function CardDescriptionPost() {
     <Card variant="DescriptionPost">
       <CardDescriptionPostContainer>
         <Header>
-          <IconText icon={IoIosArrowBack} text="VOLTAR" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" />
+          <IconText icon={IoIosArrowBack} text="VOLTAR" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue"  />
           <IconText icon={FaExternalLinkAlt} text="VER NO GITHUB" variantSize="xs" variantWeight="regular" colorIcon="blue" variantColor="blue" />
         </Header>
 
