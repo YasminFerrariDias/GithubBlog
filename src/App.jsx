@@ -1,11 +1,11 @@
 // import { Home } from "./pages/Home"
-import { Card } from "./components/Card"
+import { CardDescriptionPost } from "./features/CardDescriptionPost"
 
 export function App() {
   return (
     <>
       {/*<Home />*/}
-      <Card variant="DescriptionPost" />
+      <CardDescriptionPost />
     </>
   );
 }
