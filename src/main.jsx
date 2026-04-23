@@ -6,7 +6,7 @@ import { theme } from "./styles/themes/defaultTheme.js";
 import { GlobalStyle } from "./styles/global";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/index.js";
-import { DescriptionPost } from "./features/DescriptionPost";
+import { Description } from "./pages/Description/index.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")).render(
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/post/:number" element={<DescriptionPost />} />
+          <Route path="/Description/:number" element={<Description />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

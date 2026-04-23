@@ -8,10 +8,10 @@ export function Catalog({ issues }: { issues: Issues[] }) {
   }
 
   return (
-    <CatalogContainer>
-      {issues.map(issue => (
-        <CardPost key={issue.id} issue={issue} />
-      ))}
-    </CatalogContainer>
+      <CatalogContainer>
+        {issues.map(issue => (
+          <CardPost key={issue.number} issue={issue} />
+        ))}
+      </CatalogContainer>
   )
 }

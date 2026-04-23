@@ -14,3 +14,4 @@ export const Header = styled.div`
 export const Time = styled.div`
   white-space: nowrap;
 `;
+
