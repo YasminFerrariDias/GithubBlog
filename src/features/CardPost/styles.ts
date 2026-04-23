@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const CardPostContainer = styled.div``;
 
@@ -15,3 +16,6 @@ export const Time = styled.div`
   white-space: nowrap;
 `;
 
+export const LinkDecoration = styled(Link)`
+  text-decoration-line: none;
+`;

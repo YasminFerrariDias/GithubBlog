@@ -2,12 +2,11 @@ import { Card } from "../../components/Card";
 import { Text } from "../../components/Text";
 import { Issues } from "../../hooks/useLoadIssues";
 import { formatDateRelative } from "../../utils/formatDateRelative";
-import { CardPostContainer, Header, Time } from "./styles";
-import { Link } from "react-router-dom";
+import { CardPostContainer, Header, Time, LinkDecoration } from "./styles";
 
 export function CardPost({ issue }: { issue: Issues }) {
   return (
-    <Link to={`/Description/${issue.number}`}>
+    <LinkDecoration to={`/Description/${issue.number}`}>
       <Card variant="post">
         <CardPostContainer>
           <Header>
@@ -21,6 +20,6 @@ export function CardPost({ issue }: { issue: Issues }) {
           <Text variantSize="md" variantWeight="regular" variantColor="text" children={issue.body.length <= 125 ? `${issue.body}` : `${issue.body.slice(0, 125)}...`} />
         </CardPostContainer>
       </Card>
-    </Link>
+    </LinkDecoration>
   )
 }
