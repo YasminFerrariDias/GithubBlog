@@ -1,11 +1,22 @@
+import { useState } from "react";
 import { Text } from "../../components/Text";
 import { CardProfile } from "../../features/CardProfile";
 import { Catalog } from "../../features/Catalog";
 import { Header } from "../../features/Header";
 import { SearchText } from "../../features/SeachText";
 import { HomeContainer, Info } from "./styles";
+import { useLoadIssues } from "../../hooks/useLoadIssues";
+import { useSearchIssues } from "../../hooks/useSearchIssues";
 
 export function Home() {
+  const [searchTerm, setSearchTerm] = useState(""); // guarda o que foi digitado
+  const { issues: allIssues } = useLoadIssues(); // pega a lista completa
+  const { results: searchResults } = useSearchIssues(searchTerm); // lista filtrada
+
+  const issuesToShow = 
+    searchTerm === "" ? allIssues : searchResults
+    console.log(searchResults)
+
   return (
     <HomeContainer>
       <Header />
@@ -16,9 +27,9 @@ export function Home() {
         <Text variantSize="sm" variantWeight="regular" children="6 publicações" variantColor="span" />
       </Info>
 
-      <SearchText />
+      <SearchText searchTerm={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
 
-      <Catalog />
+      <Catalog issues={issuesToShow} />
     </HomeContainer>
   )
 }

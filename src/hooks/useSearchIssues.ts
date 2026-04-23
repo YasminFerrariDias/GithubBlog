@@ -9,9 +9,8 @@ export function useSearchIssues(searchTerm: string) {
     async function SearchIssues() {
       setLoadingIssues(true);
       const data = await searchIssues('xizhibei', 'blog', searchTerm);
-      setResults(data);
+      setResults(data.items);
       setLoadingIssues(false)
-      
     }
 
     if (searchTerm) {

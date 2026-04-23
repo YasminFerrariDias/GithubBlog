@@ -1,26 +1,18 @@
-import { useState } from "react";
 import { InputText } from "../../components/InputText";
 import { Input } from "./styles";
-import { useSearchIssues } from "../../hooks/useSearchIssues";
 
-export function SearchText() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const { results, loading } = useSearchIssues(searchTerm);
+interface SearchText {
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  searchTerm: string
+}
+
+export function SearchText({onChange, searchTerm}: SearchText) {
 
   return (
     <div>
       <Input>
-        <InputText placeholder="Buscar Conteúdo" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        <InputText placeholder="Buscar Conteúdo" value={searchTerm} onChange={onChange} />
       </Input>
-
-      {loading && <p>Procurando...</p>}
-
-      {!loading && (
-        <ul>
-          
-        </ul>
-      )}
-
     </div>
   )
 }
