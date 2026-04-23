@@ -1,7 +1,8 @@
 import { Text } from "../../components/Text";
+import { Issues } from "../../hooks/useLoadIssues";
 import { DescriptionPostContainer, Description, Code, DescriptionFirst, Row, Comment } from "./styles";
 
-export function DescriptionPost() {
+export function DescriptionPost({issue}: {issue: Issues}) {
   return (
     <DescriptionPostContainer>
       <Description>
