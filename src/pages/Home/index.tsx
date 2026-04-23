@@ -13,9 +13,8 @@ export function Home() {
   const { issues: allIssues } = useLoadIssues(); // pega a lista completa
   const { results: searchResults } = useSearchIssues(searchTerm); // lista filtrada
 
-  const issuesToShow = 
-    searchTerm === "" ? allIssues : searchResults
-    console.log(searchResults)
+  const issuesToShow =
+    searchTerm === "" ? allIssues : searchResults;
 
   return (
     <HomeContainer>
