@@ -1,10 +1,12 @@
-import { Issues } from "../../hooks/useLoadIssues";
+import { Issues, useLoadIssues } from "../../hooks/useLoadIssues";
 import { CardPost } from "../CardPost";
 import { CatalogContainer } from "./styles";
 
 export function Catalog({ issues }: { issues: Issues[] }) {
-  if (issues.length === 0) {
-    return <p>Nenhuma issues encontrada.</p>;
+  const {loading} = useLoadIssues();
+
+  if (loading) {
+    return <p>Carregando...</p>;
   }
 
   return (
