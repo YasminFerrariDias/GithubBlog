@@ -34,7 +34,7 @@ const variantStyles = {
 
 export const CardContainer = styled.div<CardContainerProps>`
   ${({ $variant }) => variantStyles[$variant]};
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: 0.2s;
 
   &:hover {
