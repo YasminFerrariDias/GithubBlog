@@ -25,7 +25,7 @@ const variantStyles = {
 
   DescriptionPost: `
     width: 54rem;
-    height: 10.5rem;
+    height: auto;
     padding: 2rem;
     background-color: ${theme.colors.profile};
     border-radius: 0.625rem;

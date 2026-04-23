@@ -47,7 +47,7 @@ export function CardProfile() {
               colorIcon="label"
               children={!profile.company
                 ? `Informação não disponível`
-                : `${profile.company} seguidores`}
+                : `${profile.company}`}
             />
 
             <IconText
