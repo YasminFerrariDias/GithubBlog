@@ -23,7 +23,7 @@ export function Home() {
 
       <Info>
         <Text variantSize="lg" variantWeight="regular" children="Publicações" variantColor="subtitle" />
-        <Text variantSize="sm" variantWeight="regular" children="6 publicações" variantColor="span" />
+        <Text variantSize="sm" variantWeight="regular" children={issuesToShow.length.toString()} variantColor="span" />
       </Info>
 
       <SearchText searchTerm={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
