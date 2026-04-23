@@ -3,20 +3,21 @@ import { searchIssues } from "../services/api-core/searchIssues";
 
 export function useSearchIssues(searchTerm: string) {
   const [results, setResults] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loadingIssues, setLoadingIssues] = useState(false);
 
   useEffect(() => {
     async function SearchIssues() {
-      setLoading(true);
+      setLoadingIssues(true);
       const data = await searchIssues('xizhibei', 'blog', searchTerm);
       setResults(data);
-      setLoading(false)
+      setLoadingIssues(false)
+      
     }
 
     if (searchTerm) {
       SearchIssues()
     }
-  }, []);
+  }, [searchTerm]);
 
-  return { results, loading }
+  return { results, loadingIssues }
 }
