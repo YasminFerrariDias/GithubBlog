@@ -17,9 +17,9 @@ export function CardPost({ issue }: { issue: Issues }) {
   if (hasImage) {
     content = <Icon><IoMdPhotos size={30} /> Contém imagem </Icon>;
   } else {
-    content = issue.body.length <= 195
+    content =  <FormatMarkdownToReact>{issue.body.length <= 195
       ? issue.body
-      : `${issue.body.slice(0, 195)}...`
+      : `${issue.body.slice(0, 195)}...`}</FormatMarkdownToReact>
   }
 
   return (
