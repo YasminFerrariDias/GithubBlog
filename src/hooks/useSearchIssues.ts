@@ -8,7 +8,7 @@ export function useSearchIssues(searchTerm: string) {
   useEffect(() => {
     async function SearchIssues() {
       setLoadingIssues(true);
-      const data = await searchIssues('xizhibei', 'blog', searchTerm);
+      const data = await searchIssues('mdn', 'translated-content', searchTerm);
       setResults(data.items);
       setLoadingIssues(false)
     }

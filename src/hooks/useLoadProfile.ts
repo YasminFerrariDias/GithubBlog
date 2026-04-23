@@ -44,7 +44,7 @@ export function useLoadProfile() {
   useEffect(() => {
     async function LoadProfile() {
       try {
-        const data = await searchProfile('xizhibei');
+        const data = await searchProfile('mdn');
         setProfile(data)
       } catch (error) {
         console.error('Erro ao buscar perfil:', error)
