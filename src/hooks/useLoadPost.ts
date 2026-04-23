@@ -8,7 +8,7 @@ export function useLoadPost(number: number) {
   useEffect(() => {
     async function LoadPost() {
       setLoading(true)
-      const data = await searchPost('mdn', 'translated-content', number);
+      const data = await searchPost('WhiskeySockets', 'Baileys', number);
       setPost(data);
       setLoading(false)
     }

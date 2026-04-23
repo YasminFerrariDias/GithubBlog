@@ -44,7 +44,7 @@ export function useLoadProfile() {
   useEffect(() => {
     async function LoadProfile() {
       try {
-        const data = await searchProfile('mdn');
+        const data = await searchProfile('WhiskeySockets');
         setProfile(data)
       } catch (error) {
         console.error('Erro ao buscar perfil:', error)

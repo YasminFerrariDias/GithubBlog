@@ -38,7 +38,7 @@ export function useLoadIssues() {
   useEffect(() => {
     async function LoadIssues() {
       try {
-        const data = await listIssues('mdn', 'translated-content');
+        const data = await listIssues('WhiskeySockets', 'Baileys');
         setIssues(data)
       } catch (error) {
         console.error('Erro ao buscar repositórios:', error)

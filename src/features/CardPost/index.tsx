@@ -5,6 +5,10 @@ import { formatDateRelative } from "../../utils/formatDateRelative";
 import { CardPostContainer, Header, Time, LinkDecoration } from "./styles";
 
 export function CardPost({ issue }: { issue: Issues }) {
+  if (!issue || !issue.body) {
+    return <p>Carregando...</p>
+  }
+
   return (
     <LinkDecoration to={`/Description/${issue.number}`}>
       <Card variant="post">
