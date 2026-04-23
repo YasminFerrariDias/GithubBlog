@@ -30,7 +30,9 @@ export const DescriptionText = styled.div<{ children: React.ReactNode }>`
   text-overflow: ellipsis;
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
+  color: ${({ theme }) => theme.colors.text};
+  font-size: ${({ theme }) => theme.fonts.size.md};
+  font-weight: ${({ theme }) => theme.fonts.weight.regular};
 `;
 
 export const Icon = styled.div`
