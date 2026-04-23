@@ -1,3 +1,4 @@
+import { ReactNode } from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Text } from "../../components/Text";
@@ -21,7 +22,7 @@ export const LinkDecoration = styled(Link)`
   text-decoration-line: none;
 `;
 
-export const DescriptionText = styled.div`
+export const DescriptionText = styled.div<{ children: React.ReactNode }>`
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -30,4 +31,10 @@ export const DescriptionText = styled.div`
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
+`;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;

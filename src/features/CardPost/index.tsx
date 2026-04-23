@@ -1,20 +1,26 @@
+import { IoMdPhotos } from "react-icons/io";
 import { Card } from "../../components/Card";
 import { Text } from "../../components/Text";
 import { Issues } from "../../hooks/useLoadIssues";
 import { formatDateRelative } from "../../utils/formatDateRelative";
 import { FormatMarkdownToReact } from "../../utils/formatMarkdownToReact";
-import { CardPostContainer, Header, Time, LinkDecoration, DescriptionText } from "./styles";
+import { CardPostContainer, Header, Time, LinkDecoration, DescriptionText, Icon } from "./styles";
 
 export function CardPost({ issue }: { issue: Issues }) {
   if (!issue || !issue.body) {
     return <p>Carregando...</p>
   }
 
- console.log("Tem imagem?", issue.body.includes('![](') || issue.body.includes('<img'));
+  let content;
+  const hasImage = issue.body.includes('![Image](') || issue.body.includes('<img');
 
-  const previewText = issue.body.length <= 195
-    ? issue.body
-    : `${issue.body.slice(0, 195)}...`
+  if (hasImage) {
+    content = <Icon><IoMdPhotos size={30} /> Contém imagem </Icon>;
+  } else {
+    content = issue.body.length <= 195
+      ? issue.body
+      : `${issue.body.slice(0, 195)}...`
+  }
 
   return (
     <LinkDecoration to={`/Description/${issue.number}`}>
@@ -28,7 +34,9 @@ export function CardPost({ issue }: { issue: Issues }) {
               </Text>
             </Time>
           </Header>
-          <DescriptionText><FormatMarkdownToReact>{previewText}</FormatMarkdownToReact></DescriptionText>
+          <DescriptionText>
+            {content}
+          </DescriptionText>
         </CardPostContainer>
       </Card>
     </LinkDecoration>
