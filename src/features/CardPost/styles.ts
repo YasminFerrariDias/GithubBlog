@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Text } from "../../components/Text";
 
 export const CardPostContainer = styled.div``;
 
@@ -18,4 +19,15 @@ export const Time = styled.div`
 
 export const LinkDecoration = styled(Link)`
   text-decoration-line: none;
+`;
+
+export const DescriptionText = styled.div`
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
 `;
