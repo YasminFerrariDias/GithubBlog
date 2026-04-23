@@ -10,6 +10,8 @@ export function CardPost({ issue }: { issue: Issues }) {
     return <p>Carregando...</p>
   }
 
+ console.log("Tem imagem?", issue.body.includes('![](') || issue.body.includes('<img'));
+
   const previewText = issue.body.length <= 195
     ? issue.body
     : `${issue.body.slice(0, 195)}...`
