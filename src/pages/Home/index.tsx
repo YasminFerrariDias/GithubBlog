@@ -1,13 +1,11 @@
 import { Text } from "../../components/Text";
-import { CardPost } from "../../features/CardPost";
 import { CardProfile } from "../../features/CardProfile";
+import { Catalog } from "../../features/Catalog";
 import { Header } from "../../features/Header";
 import { SearchText } from "../../features/SeachText";
-import { HomeContainer, Info, Catalog } from "./styles";
+import { HomeContainer, Info } from "./styles";
 
 export function Home() {
-
-
   return (
     <HomeContainer>
       <Header />
@@ -20,9 +18,7 @@ export function Home() {
 
       <SearchText />
 
-      <Catalog>
-        <CardPost />
-      </Catalog>
+      <Catalog />
     </HomeContainer>
   )
 }

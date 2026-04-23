@@ -16,7 +16,9 @@ export function SearchText() {
       {loading && <p>Procurando...</p>}
 
       {!loading && (
-        
+        <ul>
+          
+        </ul>
       )}
 
     </div>

@@ -17,9 +17,3 @@ export const Info = styled.div`
   justify-content: space-between;
   width: 54rem;
 `;
-
-export const Catalog = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-`;
